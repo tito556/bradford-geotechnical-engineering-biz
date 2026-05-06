@@ -1,0 +1,59 @@
+# Bradford
+
+> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Bearing Capacity Analysis](https://bradford.geotechnical-engineering.biz/bearing-capacity-analysis/)
+- [Debris Flow Analysis](https://bradford.geotechnical-engineering.biz/debris-flow-analysis/)
+- [Diaphragm Wall Design](https://bradford.geotechnical-engineering.biz/diaphragm-wall-design/)
+- [Direct Shear](https://bradford.geotechnical-engineering.biz/direct-shear/)
+- [Driven Pile Design](https://bradford.geotechnical-engineering.biz/driven-pile-design/)
+- [Electrical Resistivity Ves](https://bradford.geotechnical-engineering.biz/electrical-resistivity-ves/)
+- [Field Vane Shear](https://bradford.geotechnical-engineering.biz/field-vane-shear/)
+- [Flat Dilatometer](https://bradford.geotechnical-engineering.biz/flat-dilatometer/)
+- [Foundations](https://bradford.geotechnical-engineering.biz/foundations/)
+- [Geocell Design](https://bradford.geotechnical-engineering.biz/geocell-design/)
+- [Geomembrane Specification](https://bradford.geotechnical-engineering.biz/geomembrane-specification/)
+- [Geophysics](https://bradford.geotechnical-engineering.biz/geophysics/)
+- [Geotechnical Design Deep Excavations](https://bradford.geotechnical-engineering.biz/geotechnical-design-deep-excavations/)
+- [Geotechnical Excavation Monitoring](https://bradford.geotechnical-engineering.biz/geotechnical-excavation-monitoring/)
+- [Ground Improvement](https://bradford.geotechnical-engineering.biz/ground-improvement/)
+- [Grouting Design](https://bradford.geotechnical-engineering.biz/grouting-design/)
+- [Hvsr Microtremor Survey](https://bradford.geotechnical-engineering.biz/hvsr-microtremor-survey/)
+- [In Situ Testing](https://bradford.geotechnical-engineering.biz/in-situ-testing/)
+- [Investigation](https://bradford.geotechnical-engineering.biz/investigation/)
+- [Laboratory](https://bradford.geotechnical-engineering.biz/laboratory/)
+- [Micropile Design](https://bradford.geotechnical-engineering.biz/micropile-design/)
+- [Organic Soil Management](https://bradford.geotechnical-engineering.biz/organic-soil-management/)
+- [Pavement Subgrade Design](https://bradford.geotechnical-engineering.biz/pavement-subgrade-design/)
+- [Plate Load](https://bradford.geotechnical-engineering.biz/plate-load/)
+- [Porchet Double Ring Infiltrometer](https://bradford.geotechnical-engineering.biz/porchet-double-ring-infiltrometer/)
+- [Preloading Surcharge Design](https://bradford.geotechnical-engineering.biz/preloading-surcharge-design/)
+- [Raft Mat Foundation Design](https://bradford.geotechnical-engineering.biz/raft-mat-foundation-design/)
+- [Retaining Wall Design](https://bradford.geotechnical-engineering.biz/retaining-wall-design/)
+- [Rigid Pavement Design](https://bradford.geotechnical-engineering.biz/rigid-pavement-design/)
+- [Road Geotechnics](https://bradford.geotechnical-engineering.biz/road-geotechnics/)
+- [Road Subgrade Design](https://bradford.geotechnical-engineering.biz/road-subgrade-design/)
+- [Seismic](https://bradford.geotechnical-engineering.biz/seismic/)
+- [Seismic Microzonation](https://bradford.geotechnical-engineering.biz/seismic-microzonation/)
+- [Settlement Analysis](https://bradford.geotechnical-engineering.biz/settlement-analysis/)
+- [Shallow Foundation Design](https://bradford.geotechnical-engineering.biz/shallow-foundation-design/)
+- [Shear Wave Velocity](https://bradford.geotechnical-engineering.biz/shear-wave-velocity/)
+- [Site Response Analysis](https://bradford.geotechnical-engineering.biz/site-response-analysis/)
+- [Slope Stability Analysis](https://bradford.geotechnical-engineering.biz/slope-stability-analysis/)
+- [Slopes](https://bradford.geotechnical-engineering.biz/slopes/)
+- [Soil Classification](https://bradford.geotechnical-engineering.biz/soil-classification/)
+- [Soil Erosion Analysis](https://bradford.geotechnical-engineering.biz/soil-erosion-analysis/)
+- [Soil Mechanics Study](https://bradford.geotechnical-engineering.biz/soil-mechanics-study/)
+- [Standard Modified](https://bradford.geotechnical-engineering.biz/standard-modified/)
+- [Standard Penetration](https://bradford.geotechnical-engineering.biz/standard-penetration/)
+- [Underground Excavations](https://bradford.geotechnical-engineering.biz/underground-excavations/)
+- [Undisturbed Sampling](https://bradford.geotechnical-engineering.biz/undisturbed-sampling/)
+- [Unsaturated Soil Analysis](https://bradford.geotechnical-engineering.biz/unsaturated-soil-analysis/)
+
+## Contact
+- Website: https://bradford.geotechnical-engineering.biz/
+
+## About
+This page provides information about geotechnical engineering services available in United States.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
