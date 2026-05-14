@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2E8B57) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Method and coverage</h2><div>Bradford expanded rapidly during the Industrial Revolution, and many Victorian-era buildings sit on shallow foundations over variable fill. Modern developments — from the Broadway shopping centre to new housing in Manningham — demand a rigorous classification process. Our lab follows BS 5930 and BS EN ISO 14688-2 to assign USCS groups (GW, GP, GM, GC, SW, SP, SM, SC, CL, CH, ML, MH, OL, OH, PT) and AASHTO soil groups (A-1 through A-7). We measure liquid limit, plastic limit, and plasticity index using the Casagrande cup and rolling-thread method. For coarse soils, we perform dry sieve analysis down to 75 µm. The classification then guides compaction specifications under the Proctor test and informs decisions on cement or lime stabilisation for the local shale formations.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Regional considerations</h2><p>In Bradford, many times we see contractors assume that all brown clay is the same. That assumption fails when a site in Bierley hits a high-plasticity CH layer while a site in Baildon finds low-plasticity CL. The difference changes bearing pressure by a factor of two. Without proper soil classification, you risk foundation heave from expansive clay or differential settlement where soft alluvium meets stiff till. We always flag the presence of organic silt or peat lenses, common along the Bradford Beck valley, because those materials classify as OH or PT and require removal or deep foundations. That is why we insist on classification before any design proceeds.</p>
+        <h2>Regional considerations</h2><p>In Bradford, many times we see contractors assume that all brown clay is the same. That assumption fails when a site in Bierley hits a high-plasticity CH layer while a site in Baildon finds low-plasticity CL. The difference changes bearing pressure by a factor of two. Without proper soil classification, you risk foundation heave from expansive clay or differential settlement where soft alluvium meets stiff till. We always flag the presence of organic silt or peat lenses, common along the Bradford Beck valley, because those materials classify as OH or PT and require removal or deep <a href="/foundations/">foundations</a>. That is why we insist on classification before any design proceeds.</p>
 
         
     <section class="block mid-cta-5b15-5b15" style="padding:2rem 0">
