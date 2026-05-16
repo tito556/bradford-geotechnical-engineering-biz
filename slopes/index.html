@@ -138,7 +138,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -149,6 +149,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head><body>
 
@@ -181,11 +237,11 @@ body>*{max-width:100vw}
       </div>
     </section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/estabilidad-taludes-1.webp" alt="Slopes in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/muros-contencion-4.webp" alt="Slopes in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Effective slope stability assessment in Bradford demands a thorough understanding of the local geological context, which is dominated by the interbedded sandstones and mudstones of the Carboniferous Millstone Grit and Coal Measures, often overlain by variable glacial till and colluvium. This complex stratigraphy, frequently complicated by historical shallow coal workings and the region’s steep valley topography, creates a significant risk of both rotational and translational failures. Our specialist services begin with a detailed <a href="/investigation/">ground investigation</a> to define the critical strength parameters, groundwater regime, and geological structure, all interpreted in strict accordance with the relevant British Standards, particularly BS 5930:2015+A1:2020 for the Code of Practice for ground investigations, and the design requirements of Eurocode 7: BS EN 1997-1:2004+A1:2013.</p>
 <p>A robust geotechnical model for slope analysis is built upon high-quality intrusive and in-situ data, executed to UK standards. We deploy <a href="/standard-penetration/">Standard Penetration Tests (SPT)</a> within boreholes to provide an index of relative density and strength in granular tills and weathered rock, with sampling undertaken at regular intervals. For the accurate quantification of strength and deformation characteristics in the cohesive glacial clays and over-consolidated mudstones, we utilise advanced <a href="/in-situ-testing/">In-Situ</a> techniques. This includes the <a href="/flat-dilatometer/">Flat Dilatometer Test (DMT)</a> to profile lateral stress and stiffness, and the <a href="/field-vane-shear/">field vane shear test (VST)</a> to directly measure the undrained shear strength of soft to firm cohesive soils. To determine the bearing capacity of shallow foundations on slopes, a <a href="/plate-load/">plate load test (PLT)</a> can be performed, with all field data calibrated against the high-quality results from our <a href="/laboratory/">laboratory</a> testing programme on <a href="/undisturbed-sampling/">undisturbed samples</a> retrieved using Shelby tubes.</p>
 <p>Our experience in Bradford encompasses a wide range of slope-dependent projects, from the redevelopment of brownfield sites on the valley sides of the city centre to residential expansions on the fringes of the Pennine moorlands. We routinely provide geotechnical design reports for cut-and-fill operations, soil nailed retaining structures, and the remediation of ancient, now dormant, landslips that are reactivated by exceptional rainfall. A typical commission involves assessing the stability of a steep garden terrace behind a Victorian mill conversion in Little Germany or designing the drainage and reinforcement for a new access road on a sloping site in the Allerton area, ensuring compliance with the planning conditions set by the City of Bradford Metropolitan District Council regarding geotechnical risk.</p>
-<img src="/img/muros-contencion-4.webp" alt="Slopes in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/muros-contencion-1.webp" alt="Slopes in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>The process culminates in the delivery of a comprehensive Slope Stability Assessment Report, providing a clear and actionable framework for designers and regulators. Our deliverables include detailed ground models, limit equilibrium stability analyses using software such as Slope/W or Slide, and clear recommendations for groundwater management and slope remediation or reinforcement measures. By integrating rigorous UK-standard field data with advanced analytical methods, we transform complex hillside constraints into predictable, manageable engineering solutions, de-risking your investment and ensuring the long-term safety and performance of your development in the challenging terrain of Bradford.</p></div></section></main>
 </div>
@@ -201,7 +257,7 @@ body>*{max-width:100vw}
     if(!el)return;
     var map=L.map(el).setView([53.7944229,-1.7519186],12);
     L.tileLayer('https://{s}.tile-5b15.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
-    L.marker([53.7944229,-1.7519186],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Bradford").openPopup();
+    L.marker([53.7944229,-1.7519186],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Bradford").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();

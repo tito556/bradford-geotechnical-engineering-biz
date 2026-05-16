@@ -138,7 +138,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -149,6 +149,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head><body>
 
@@ -181,11 +237,11 @@ body>*{max-width:100vw}
       </div>
     </section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/cimentaciones-superficiales-1.webp" alt="Foundations in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/pilotes-hincados-1.webp" alt="Foundations in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Effective foundation design in Bradford demands a thorough understanding of the underlying geological sequence, which is dominated by Carboniferous Millstone Grit sandstones interbedded with shales and mudstones, frequently overlain by variable glacial till and alluvial deposits within the Aire and Bradford Beck valleys. Our scope of work covers the complete geotechnical lifecycle, from initial desk studies and intrusive <a href="/investigation/">ground investigation</a> to detailed analysis and foundation recommendations, ensuring compliance with Eurocode 7, BS 5930, and NHBC Standards. The presence of shallow coal seams and historical mining activity introduces a critical risk of subsidence, making a rigorous <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> program essential for assessing the competence of both the natural strata and any made ground.</p>
 <p>Our investigative methodology strictly adheres to the UK Specification for Ground Investigation, with all fieldwork executed to the highest technical standards defined by BS EN ISO 22475-1. We deploy a phased approach, combining cable percussion and rotary drilling to characterise the strength and weathering profile of the Bradford sandstone, often encountered as a high-quality founding stratum at relatively shallow depths. In cohesive tills and laminated clays, we perform <a href="/field-vane-shear/">field vane shear tests (VST)</a> to determine undrained shear strength with minimal disturbance, while <a href="/flat-dilatometer/">flat dilatometer testing (DMT)</a> provides high-resolution profiling of soil stiffness and lateral stress for settlement-sensitive structures. The acquisition of Class 1 samples via <a href="/undisturbed-sampling/">undisturbed sampling</a> using Shelby tubes ensures that subsequent advanced laboratory testing is based on specimens that truly represent in-situ conditions.</p>
 <p>Typical projects across Bradford, from the redevelopment of industrial mill complexes in Manningham to new residential estates on sloping sites in Queensbury, present distinct foundation challenges that demand a tailored geotechnical approach. The weathered sandstone often exhibits a highly variable bearing capacity, which we quantify through <a href="/plate-load/">plate load tests (PLT)</a> to optimise shallow foundation dimensions and avoid costly over-design or the unnecessary use of deep piling. For brownfield sites where contamination and heterogeneous fill are primary concerns, our integrated <a href="/in-situ-testing/">In-Situ</a> strategies provide rapid, continuous data to delineate zones of poor ground, enabling targeted Improvement or the confident specification of engineered fill. This site-specific data is crucial for satisfying building control requirements and securing structural warranty approvals.</p>
-<img src="/img/pilotes-hincados-1.webp" alt="Foundations in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/micropilotes-5.webp" alt="Foundations in Bradford" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>Following the completion of fieldwork, all samples and data are transferred to our accredited <a href="/laboratory/">laboratory</a> for classification and strength testing, generating the definitive geotechnical parameters required for foundation design. The final process involves rigorous interpretation and the delivery of a comprehensive Geotechnical Design Report, which presents clear, unambiguous recommendations for foundation type, allowable bearing pressures, and settlement predictions, specifically calibrated to the geological conditions encountered. By integrating high-quality field data with precise laboratory analysis, we provide Bradford developers and structural engineers with the certainty needed to mitigate ground risk, reduce construction delays, and deliver robust, cost-efficient foundations.</p></div></section></main>
 </div>
@@ -201,7 +257,7 @@ body>*{max-width:100vw}
     if(!el)return;
     var map=L.map(el).setView([53.7944229,-1.7519186],12);
     L.tileLayer('https://{s}.tile-5b15.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
-    L.marker([53.7944229,-1.7519186],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Bradford").openPopup();
+    L.marker([53.7944229,-1.7519186],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Bradford").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();
